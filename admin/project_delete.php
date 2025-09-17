@@ -1,0 +1,2 @@
+<?php session_start(); include("../includes/db.php"); if(!isset($_SESSION['admin'])){ header("Location: login.php"); exit; }
+$id = intval($_GET['id']); $conn->query("DELETE FROM projects WHERE id=$id"); header("Location: projects.php"); exit; ?>

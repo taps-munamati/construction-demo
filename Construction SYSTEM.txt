@@ -1,0 +1,124 @@
+🏗️ Construction Company Website Structure
+Frontend Pages
+
+Home Page (index.php)
+
+Hero section with rotating banner images (slideshow of projects).
+
+Brief intro about the company.
+
+Quick links to Services, Projects, Contact.
+
+About Us (about.php)
+
+Company background.
+
+Mission, Vision, Values.
+
+Team profiles (optional).
+
+Services (services.php)
+
+List of construction services (building, renovations, roadworks, consultancy, etc.).
+
+Each service has description + image.
+
+Projects (projects.php)
+
+Show completed and ongoing projects (with images).
+
+Can pull dynamically from database.
+
+Contact Us (contact.php)
+
+Contact form (stores inquiries in DB + sends email).
+
+Company address, phone, email, Google Map integration.
+
+Backend / Admin Panel
+
+(Admin-only area to manage content, just like guesthouse system)
+
+Login (admin/login.php)
+
+Dashboard (admin/index.php)
+
+Manage Services (CRUD)
+
+Manage Projects (CRUD, upload images)
+
+Manage Contact Inquiries (view messages)
+
+Database (construction.sql)
+
+We’ll need tables:
+
+services → (id, title, description, image)
+
+projects → (id, title, description, image, status)
+
+inquiries → (id, name, email, phone, message, date)
+
+admin → (id, username, password_hash)
+
+Key Features
+
+Dynamic slideshow of projects on homepage.
+
+Services and Projects pulled from database.
+
+Contact form with database storage & optional email alerts.
+
+Admin panel for full management.
+
+Responsive, business-class design.
+
+
+
+
+
+What’s inside the ZIP
+
+- Frontend: index.php, about.php, services.php, projects.php, contact.php
+
+- Admin panel: admin/login.php, dashboard.php, CRUD for Services, Projects, Slides, and Inquiries
+
+- Assets: assets/css/style.css, assets/js/script.js, assets/images/ (upload target)
+
+- DB config: includes/db.php (update credentials for your server)
+
+- SQL dump: construction.sql (creates DB + tables + default admin)
+
+Quick start
+
+1. Extract to your web root (e.g., htdocs/construction_site).
+
+2. Create a database and import construction.sql via phpMyAdmin.
+
+3. Edit includes/db.php with your host’s MySQL credentials.
+
+4. Make sure assets/images/ is writable for uploads.
+
+5. Admin login: username: admin / password: 12345 (please change it).
+
+If you want, I can harden this to production standards (prepared statements, file-type validation, CSRF tokens, stronger password hashing like password_hash()), or tailor the branding/design to a specific construction company.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
